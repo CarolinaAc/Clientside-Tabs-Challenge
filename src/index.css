@@ -11,3 +11,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* General styling */
+
+.tab-panel-container {
+  padding: 10px 0;
+  max-width: 600px;
+}
+header {
+  margin-left: 1em;
+}
+
+/* Navbar tab links style */
+.tab-links {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  padding: 0;
+  color: #000;
+  background-color: #ededed;
+  font-weight: bold;
+}
+
+.tab {
+  background-color: inherit;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 24px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab:hover,
+.tab:focus {
+  background-color: #ddd;
+}
+.tab.active {
+  background-color: white;
+}
+
+/* Content Style */
+
+.tab-panel .list-item {
+  padding: 10px 0;
+  margin-left: 2em;
+  border-top: 1px solid #ededed;
+  list-style: none;
+}
+
+.list-item span {
+  font-weight: bold;
+  color: grey;
+  padding-right: 0.8em;
+}
+.list-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.list-item a:hover,
+.list-item a:focus {
+  color: grey;
+}

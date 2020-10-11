@@ -14,7 +14,7 @@ Regarding Browser support, this app works fine in Google Chrome Version 86.0.424
 
 Initially I have included the 3 requested tabs in constants, just so we can add more tabs as needed by adding the search title in `tabList`.
 
-The initial state of the lists is a link towards the main page of the guardian for that section: [Uk News](https://www.theguardian.com/uk-news), [Football](https://www.theguardian.com/football), [Travel](https://www.theguardian.com/uk/travel). This was made in order to the user to have access to the related news even if the fetch fails.
+The initial state of the lists is a link to the main page of the guardian for that section: [Uk News](https://www.theguardian.com/uk-news), [Football](https://www.theguardian.com/football), [Travel](https://www.theguardian.com/uk/travel). This was made in order to the user to have access to the related news even if the fetch fails.
 
 I have not implemented Tests for this app due to time restrictions, but the main tests I would run would be for confirming the different states and confirming that the fetch is returning the values as expected (for it I would refactor the `useEffect` inside the `Tab` component so it imports the fetchData function from a different file so there is no need to copy it manually for the test).
 

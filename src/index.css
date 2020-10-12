@@ -40,7 +40,7 @@ header {
   top: -40px;
   left: 0;
   width: 150px;
-  background-color: red;
+  background-color: #1700ff;
   color: white;
   text-decoration: none;
   outline: none;
@@ -89,7 +89,7 @@ header {
 
 .list-item span {
   font-weight: bold;
-  color: grey;
+  color: black;
   padding-right: 0.8em;
 }
 .list-item a {

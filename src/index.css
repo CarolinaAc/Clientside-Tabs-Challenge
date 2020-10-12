@@ -23,6 +23,7 @@ header {
 }
 
 /* Navbar tab links style */
+
 .tab-links {
   display: flex;
   justify-content: space-around;
@@ -33,7 +34,26 @@ header {
   background-color: #ededed;
   font-weight: bold;
 }
-
+/* * Accessibility link to tab straight to the title's list*/
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 150px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  outline: none;
+  font-size: 0.7em;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 10px;
+  border: solid black;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 0;
+}
 .tab {
   background-color: inherit;
   width: 100%;

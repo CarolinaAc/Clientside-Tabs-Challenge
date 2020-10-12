@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 //* Constants
 import {
+  fetchData,
   initialFootball,
   initialTravel,
   initialUkNews,
@@ -19,15 +20,7 @@ function Tabs() {
   const [articles, setArticles] = useState(ukNews);
 
   useEffect(() => {
-    // * Async fetch function for obtaining all the needed articles, to be imported from constants when refactoring
-    const fetchData = async (content, callback, key = "test") => {
-      const response = await fetch(
-        `https://content.guardianapis.com/search?q=${content}&api-key=${key}`
-      );
-      const data = await response.json();
-      callback(data.response.results);
-    };
-
+  
     // * Calling the fetch function for each of the states we want to update
     fetchData("football", setFootball).catch((err) => {
       console.log(err);

@@ -17,3 +17,13 @@ export const initialTravel = [
     },
   ];
 export const tabList = ["UK News", "Football", "Travel"];
+
+// * Async fetch function for obtaining all the needed articles, to be imported from constants when refactoring
+
+export const fetchData = async (content, callback, key = "test") => {
+  const response = await fetch(
+    `https://content.guardianapis.com/search?q=${content}&api-key=${key}`
+  );
+  const data = await response.json();
+  callback(data.response.results);
+};

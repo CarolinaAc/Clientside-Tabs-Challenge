@@ -61,7 +61,7 @@ function Tabs() {
   return (
     <div className="main-container">
       <Navbar activeTab={tab} setTab={setTab} />
-      <List tab={tab} articles={articles} />
+      <List labelby={tab} tab={tab} articles={articles} />
     </div>
   );
 }

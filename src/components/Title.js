@@ -1,9 +1,9 @@
 import React from "react";
 
-const Title = ({ title, url, id }) => {
+const Title = ({ title, url, id, labelby}) => {
   return (
-    <li title={title} className="list-item">
-      <span>{id}</span> <a href={url} >{title}</a>
+    <li aria-labelledby={labelby} title={title} className="list-item">
+      <span>{id}</span> <a href={url} target='_blank' rel='noopener noreferrer'>{title}</a>
     </li>
   );
 };

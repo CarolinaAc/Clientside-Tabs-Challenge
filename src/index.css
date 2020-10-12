@@ -73,12 +73,18 @@ header {
 }
 
 /* Content Style */
+.tab-panel {
+  outline: none;
+}
 
 .tab-panel .list-item {
   padding: 10px 0;
   margin-left: 2em;
   border-top: 1px solid #ededed;
   list-style: none;
+}
+.tab-panel .list-item a:focus {
+  outline: thin solid #ededed;
 }
 
 .list-item span {

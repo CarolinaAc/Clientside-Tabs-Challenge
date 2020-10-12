@@ -1,3 +1,6 @@
+/**IE 9 and 11 support, in theory all other modern browsers are compatible, however will need to check CSS compatibility */
+import "react-app-polyfill/ie9";
+
 import React from "react";
 import Title from "./Title";
 

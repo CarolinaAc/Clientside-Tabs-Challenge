@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 //* Constants
 import {
-  fetchData,
+ 
   initialFootball,
   initialTravel,
   initialUkNews,
@@ -10,6 +10,7 @@ import {
 //* Components
 import Navbar from "./Navbar";
 import List from "./List";
+import {  getArticles, } from "../util";
 
 function Tabs() {
   //* Initial states
@@ -22,15 +23,15 @@ function Tabs() {
   useEffect(() => {
   
     // * Calling the fetch function for each of the states we want to update
-    fetchData("football", setFootball).catch((err) => {
+    getArticles("football", setFootball).catch((err) => {
       console.log(err);
       setFootball(initialFootball);
     });
-    fetchData("uk-news", setUkNews).catch((err) => {
+    getArticles("uk-news", setUkNews).catch((err) => {
       console.log(err);
       setUkNews(initialUkNews);
     });
-    fetchData("travel", setTravel).catch((err) => {
+    getArticles("travel", setTravel).catch((err) => {
       console.log(err);
       setTravel(initialUkNews);
     });

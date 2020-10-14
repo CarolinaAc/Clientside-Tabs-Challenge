@@ -1,3 +1,5 @@
+
+
 export const initialUkNews = [
     {
       title: "Uk News General Page",
@@ -20,10 +22,12 @@ export const tabList = ["UK News", "Football", "Travel"];
 
 // * Async fetch function for obtaining all the needed articles, to be imported from constants when refactoring
 
-export const fetchData = async (content, callback, key = "test") => {
-  const response = await fetch(
-    `https://content.guardianapis.com/search?q=${content}&api-key=${key}`
-  );
-  const data = await response.json();
-  callback(data.response.results);
-};
+// Refactored in fetchdata (in http.js) and getArticles(in utils.js)
+// export const fetchData = async (content, callback, key = "test") => {
+//   const response = await fetch(
+//     `https://content.guardianapis.com/search?q=${content}&api-key=${key}`
+//   );
+//   const data = await response.json();
+//   callback(data.response.results);
+// };
+

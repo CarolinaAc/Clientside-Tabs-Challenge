@@ -1,18 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
-import { fetchData } from "./constants";
 
-// test('renders learn react link', () => {
-//   const { getByText } = render(<App />);
-//   const linkElement = getByText(/learn react/i);
+test('fake test', () => {
+    // fake test before doing unit test of the components
+  const a = 'a'
+  expect(a).toBe('a')
 //   expect(linkElement).toBeInTheDocument();
-// });
+});
 
-describe('fetchData', () =>{
-  it('should still return a result an aray even if no key is given, when callback is return', async () => {
-    expect.assertions(1);
-    
-    /** continue reviewing documentation re async testing */
-  })
-})
